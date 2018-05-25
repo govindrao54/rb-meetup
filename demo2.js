@@ -1,8 +1,8 @@
 /*
  * @Author: govind
  * @Date:   2018-05-24 04:02:00
- * @Last Modified by:   govind
- * @Last Modified time: 2018-05-24 05:05:52
+ * @Last Modified by:   govindrao54
+ * @Last Modified time: 2018-05-25 18:28:26
  */
 
 const crypto = require('crypto');
@@ -18,6 +18,7 @@ if (!operation || (!count || !(count > 0 && count < 20))) {
 		operation: --sync or --async
 		count: integer 1 to 20\n
     `));
+    process.exit(0);
 }
 
 for (let i = 0; i < count; i++) {

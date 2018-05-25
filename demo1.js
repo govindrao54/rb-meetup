@@ -1,8 +1,8 @@
 /*
  * @Author: govind
  * @Date:   2018-05-24 05:07:33
- * @Last Modified by:   govind
- * @Last Modified time: 2018-05-25 14:32:15
+ * @Last Modified by:   govindrao54
+ * @Last Modified time: 2018-05-25 20:47:23
  */
 
 var express = require('express');
@@ -53,7 +53,7 @@ var app = express();
 app.get('/math-api', function(req, res) {
 	log.info(chalk.magenta('math-api called'));
 
-    var COUNTER = 3;
+    var COUNTER = 5;
     for (var j = 1; j < COUNTER; j++) {
         for (var i = 0; i < 2000000000; i++) {
             // do nothing
@@ -72,7 +72,7 @@ app.get('/db-api', function(req, res) {
         .select()
         .where('state', 'like', '%ASDFFGHJKL-1234567890%')
         .andWhere('created_date', '<', 1512341234)
-        .andWhere('id', '<', 234567)
+        .andWhere('id', '<', 464567)
         .then(function(res1) {
             log.info(chalk.bgGreen("db-api success"));
             return finalCallback(req, res, null, res1);
