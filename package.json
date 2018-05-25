@@ -1,0 +1,25 @@
+{
+  "name": "meetup",
+  "version": "1.0.0",
+  "description": "node js working, debugging and performance demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "govind",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "chalk": "^2.4.1",
+    "express": "^4.16.3",
+    "knex": "^0.14.6",
+    "mysql": "^2.15.0",
+    "pbkdf2": "^3.0.14",
+    "request": "^2.85.0",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "artillery": "^1.6.0-15",
+    "nodemon": "^1.17.3"
+  }
+}
